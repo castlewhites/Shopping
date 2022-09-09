@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .product-detail{
+            width: 360px;
+            padding-bottom: 24px;
+            position: absolute;
+            right: 0;
+        }
+        .product-detail-close{
+            background-color: var(--white);
+            width: 14px;
+            height: 14px;
+            top: 12px;
+            left: 12px;
+            position: absolute;
+            z-index: 2;
+            padding: 12px;
+            border-radius: 50%;
+        }
+        .product-detail-close:hover{
+            cursor: pointer; 
+
+        }
+    
+        .product-detail > img:nth-child(2){
+            width: 100%;
+            object-fit: cover;
+            border-radius: 0 0  20px 20px;
+        }
+        .product-info{
+            margin: 24px 24px 0 24px;
+        }
+        .product-info p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        .product-info p:nth-child(2){
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 34px;
+            color: var(--very-light-pink);
+        }
+        .product-info p:nth-child(3){
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 34px;
+            color: var(--very-light-pink);
+        }
+        
+
+        .primary-button{
+            background-color: var(--hospital-green);
+            border: none;
+            border-radius: 8px;
+            color: var(--white);
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 46px;
+            width: 100%;
+        }
+        .add-to-card-button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 640px){
+            .product-detail{
+                width: 100%;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="product-detail-close">
+            <img src="./Platzi_YardSale_Icons-20220826T012644Z-001/Platzi_YardSale_Icons/icon_close.png" alt="close">
+        </div>
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bike">
+        <div class="product-info">
+            <p>$35,00</p>
+            <p>Bike</p>
+            <p>Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Eaque voluptatem doloribus,
+                nihil non laboriosam placeat exercitationem 
+                facere consequuntur. Voluptatibus non corrupti
+                iusto eius iure ipsam nemo saepe magnam aperiam
+                corporis!
+            </p>
+            <button class="primary-button add-to-card-button">
+                <img src="./Platzi_YardSale_Icons-20220826T012644Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to card">
+                Add to cart
+            </button>
+
+        </div>
+</body>
+</html>
