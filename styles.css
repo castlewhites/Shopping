@@ -137,7 +137,9 @@ nav{
     position: absolute ;
     background-color: var(--white);
     top: 61px;
-    left: 0;    
+    left: 0;   
+    width: 100%;
+    box-sizing: border-box; 
 }
 
 .mobile-menu a{
@@ -167,7 +169,8 @@ nav{
     color: var(--hospital-green) !important;
     font-size: var(--sm);
 }
- /* Aside (product details y carrito) */
+
+ /* Aside (carrito) */
  .product-detail{
     width: 360px;
     padding: 0 24px;
@@ -251,6 +254,72 @@ nav{
     height: 46px;
     width: 100%;
 }
+.checkout{
+    margin-bottom: 10px;
+}
+
+ /* Aside (carrito) */
+
+ .product-detail-secundary{
+    width: 360px;
+    padding-bottom: 24px;
+    position: absolute;
+    right: 0;
+    display: none;
+    background-color: var(--white);
+}
+.product-detail-secundary-close{
+    background-color: var(--white);
+    width: 14px;
+    height: 14px;
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    z-index: 2;
+    padding: 12px;
+    border-radius: 50%;
+}
+.product-detail-secundary-close:hover{
+    cursor: pointer; 
+
+}
+
+.product-detail-secundary > img:nth-child(2){
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 0  20px 20px;
+}
+.product-info-aside{
+    margin: 24px 24px 0 24px;
+}
+.product-info-aside p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.product-info.aside p:nth-child(2){
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 34px;
+    color: var(--very-light-pink);
+}
+.product-info-aside p:nth-child(3){
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 34px;
+    color: var(--very-light-pink);
+}
+
+
+.add-to-card-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* section card container */
 
 .cards-container{
     display: grid;
@@ -297,6 +366,8 @@ nav{
     color: var(--very-light-pink);
 }
 
+
+
  @media (max-width: 640px){
     .menu{
         display: block;
@@ -322,7 +393,9 @@ nav{
     .product-card img{
         width: 100%;
         height: 140px;
-       
+    }
+    .product-detail-secundary{
+        width: 100%;
     }
  }
  @media (min-width: 641px){

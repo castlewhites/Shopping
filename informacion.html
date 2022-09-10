@@ -25,13 +25,13 @@
             margin: 0;
             font-family: 'Quicksand', sans-serif;
         }
-        .product-detail{
+        .product-detail-secundary{
             width: 360px;
             padding-bottom: 24px;
             position: absolute;
             right: 0;
         }
-        .product-detail-close{
+        .product-detail-secundary-close{
             background-color: var(--white);
             width: 14px;
             height: 14px;
@@ -42,12 +42,12 @@
             padding: 12px;
             border-radius: 50%;
         }
-        .product-detail-close:hover{
+        .product-detail-secundary-close:hover{
             cursor: pointer; 
 
         }
     
-        .product-detail > img:nth-child(2){
+        .product-detail-secundary > img:nth-child(2){
             width: 100%;
             object-fit: cover;
             border-radius: 0 0  20px 20px;
@@ -92,7 +92,7 @@
             justify-content: center;
         }
         @media (max-width: 640px){
-            .product-detail{
+            .product-detail-secundary{
                 width: 100%;
             }
         }
@@ -100,8 +100,8 @@
     </style>
 </head>
 <body>
-    <aside class="product-detail">
-        <div class="product-detail-close">
+    <aside class="product-detail-secundary">
+        <div class="product-detail-secundary-close">
             <img src="./Platzi_YardSale_Icons-20220826T012644Z-001/Platzi_YardSale_Icons/icon_close.png" alt="close">
         </div>
         <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bike">
@@ -121,5 +121,6 @@
             </button>
 
         </div>
-</body>
+    </aside>
+    </body>
 </html>
